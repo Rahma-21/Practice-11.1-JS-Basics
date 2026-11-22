@@ -5,8 +5,13 @@
 // - Everything else: return typeof value.
 
 function describeValue(value) {
-  // your code
+  if (value === null) return 'null';
+  if (Array.isArray(value)) return 'array' //نسوي هذي الطريقة عشان اذا جربنا نفس الطريقة مثل فوق ما بيطلع لانه array مستحيل يكون فاضي
+  if(Number.isNaN(value)) return 'NaN'
+  return typeof value;
 }
+
+
 
 // Expected output:
 console.log(describeValue(42));         // "number"
