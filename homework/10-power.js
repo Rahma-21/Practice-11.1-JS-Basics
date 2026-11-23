@@ -5,7 +5,24 @@
 // - Any number to the power of 0 is 1.
 
 function power(base, exponent) {
-  // your code
+  let cal=base;
+  for(let i=1; i<=base;i++){
+   switch(exponent){
+    case 0 : return 1;
+    case 1 : return base;
+    case 2 : return base * base;
+    case 3 : return base * base * base;
+    case 4 : return base * base * base * base;
+    case 5 : return base * base * base * base * base;
+    case 6 : return base * base * base * base * base * base;
+    case 7 : return base * base * base * base * base  * base * base;
+    case 8 : return base * base * base * base * base  * base * base * base;
+    case 9 : return base * base * base * base * base  * base * base * base * base;
+    case 10 : return base * base * base * base * base  * base * base * base * base * base;
+   }
+   
+
+  }
 }
 
 // Expected output:
